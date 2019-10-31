@@ -1,14 +1,8 @@
 import React from 'react';
 
-// import publications from './publications.json';
-import Counter from '../Counter';
-import Controls from '../Controls';
+import publications from './publications.json';
+import Reader from '../Reader';
 
-const App = () => (
-  <div>
-    <Controls />
-    <Counter />
-  </div>
-);
+const App = () => <Reader items={publications} />;
 
 export default App;
